@@ -1,0 +1,33 @@
+<html>
+<body>
+    <p>
+    {{ hi }} 
+    </p>
+    <p>
+    Original name was {{ origName }} new name is {{ name }}
+    </p>
+    <p>
+        List of Names:
+        <ul>
+            {% for name in origNames %}
+                <li>{{ name }}</li>
+            {% endfor %}
+        </ul>
+    <p>
+    Title case names:
+    <ul>
+        {% for name in names_list %}
+            <li>{{ name }}</li>
+        {% endfor %}
+    </ul>
+    the second name is {{ names_list.1 }}
+    </p>
+    <p>
+    the color of car1 is: {{ car1.color }}, it makes the sound {{ car1.sound }}, and has {{ car1.wheels }} wheels.
+    <br>
+    the color of car2 is: {{ car2.color }}, it makes the sound {{ car2.sound }}, and has {{ car2.wheels }} wheels.
+    <br>
+    motorcycle1 make: {{ motorcycle1.make }}, year: {{ motorcycle1.year }}, wheels: {{ motorcycle1.wheels }}.
+    </p>
+</body>
+</html>
